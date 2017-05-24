@@ -11,10 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TraineeController@home');
 
 Route::get('/boroms', 'TraineeController@boroms');
 Route::get('/joshua', 'TraineeController@josh');
 Route::get('/mai', 'TraineeController@mai');
+Route::get('/trainee/guillermo', 'GuillermoController@index');
