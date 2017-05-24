@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
-
 class RommelController extends Controller
 {
-    
+    function index()
+    {
+        echo "This is Rommel Cuneta";
+    }
 }
