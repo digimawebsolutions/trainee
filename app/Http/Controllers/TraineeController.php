@@ -25,6 +25,7 @@ class TraineeController extends Controller
     {
         $data["_customer"] = Tbl_customer::limit(5)->get();
         return view('trainee.mai', $data);
+       
     }
     public function boroms2()
     {
