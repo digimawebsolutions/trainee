@@ -13,7 +13,13 @@
 
 Route::get('/', 'TraineeController@home');
 
+Route::get('/trainee/brain', 'BrainController@index'); //by: brain
 Route::get('/boroms', 'TraineeController@boroms');
 Route::get('/joshua', 'TraineeController@josh');
 Route::get('/mai', 'TraineeController@mai');
 Route::get('/trainee/guillermo', 'GuillermoController@index');
+Route::get('/trainee/rommel', 'RommelController@index');
+Route::get('/trainee/borroms', 'BorromsController@borroms');
+Route::get('/trainee/renz', 'RenzController@renz');
+Route::get('/raymond' , 'RaymondController@message');
+Route::get('/trainee/joshua','JoshuaController@Add');

@@ -7,16 +7,22 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class borroms extends Controller
+class BorromsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+    public function borroms()
+    {
+       echo "Bonjour"."<br>"."Mark Anthony Borromeo";
+    }
+
+
     public function index()
     {
-        //
+       //
     }
 
     /**
