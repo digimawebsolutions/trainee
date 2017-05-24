@@ -21,17 +21,4 @@ Route::get('/trainee/brain', 'BrainController@index'); //by: brain
 Route::get('/boroms', 'TraineeController@boroms');
 Route::get('/joshua', 'TraineeController@josh');
 Route::get('/mai', 'TraineeController@mai');
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Route::get('/momai', 'MaiController@mai');
-=======
-Route::get('/raymond' , 'RaymondController@message');
->>>>>>> e45f12b6a560d03b74eeb359e80ea03f1b82a364
-=======
-=======
-Route::get('/trainee/borroms', 'BorromsController@borroms');
-Route::get('/trainee/renz', 'RenzController@renz');
-Route::get('/raymond' , 'RaymondController@message');
->>>>>>> 62a1105708c8f75eb465a0e311adb85a7258a570
-Route::get('/trainee/joshua','JoshuaController@Add');
+
