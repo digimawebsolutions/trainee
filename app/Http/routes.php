@@ -19,7 +19,11 @@ Route::get('/boroms', 'TraineeController@boroms');
 Route::get('/joshua', 'TraineeController@josh');
 Route::get('/mai', 'TraineeController@mai');
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::get('/momai', 'MaiController@mai');
+=======
+Route::get('/raymond' , 'RaymondController@message');
+>>>>>>> e45f12b6a560d03b74eeb359e80ea03f1b82a364
 =======
 Route::get('/trainee/joshua','JoshuaController@Add');
 >>>>>>> 9ba38205d7b2946dd214648859e723f9ec89e562
