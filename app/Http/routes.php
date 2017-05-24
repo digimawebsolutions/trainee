@@ -18,4 +18,8 @@ Route::get('/', function () {
 Route::get('/boroms', 'TraineeController@boroms');
 Route::get('/joshua', 'TraineeController@josh');
 Route::get('/mai', 'TraineeController@mai');
+<<<<<<< HEAD
 Route::get('/momai', 'MaiController@mai');
+=======
+Route::get('/trainee/joshua','JoshuaController@Add');
+>>>>>>> 9ba38205d7b2946dd214648859e723f9ec89e562

@@ -12,7 +12,7 @@ class JoshuaController extends Controller
     
     public function Add()
     {  
-        echo('Hello Joshua Garcia');
+        echo "Mag Add ka dito";
         
     }
 
