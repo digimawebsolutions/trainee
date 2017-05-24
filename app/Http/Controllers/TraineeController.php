@@ -6,6 +6,10 @@ use App\Models\Tbl_customer;
 
 class TraineeController extends Controller
 {
+    public function home()
+    {
+        echo "Hello World";
+    }
     public function boroms()
     {
         $x = Request::input("x");
@@ -19,7 +23,7 @@ class TraineeController extends Controller
     }
     public function mai()
     {
-        $data["_customer"] = Tbl_customer::limit(5)->info()->get();
+        $data["_customer"] = Tbl_customer::limit(5)->get();
         return view('trainee.mai', $data);
     }
     public function boroms2()
