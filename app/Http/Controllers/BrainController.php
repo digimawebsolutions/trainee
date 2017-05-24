@@ -9,8 +9,26 @@ use App\Http\Controllers\Controller;
 
 class BrainController extends Controller
 {
+
+    private $fullname;
+
     function index()
     {
-        echo 'Mark Brain M. Oliver I';
+        $myFName = 'Mark Brain M. Oliver I';
+        $this->setFullName($myFName);
+        echo $this->getFullName();
     }
+
+    /*FullName Mutator and Accessor*/
+    function setFullName($fname)
+    {
+        $this->fullname = $fname;
+    }
+
+    function getFullName()
+    {
+        return $this->fullname;
+    }
+    /*End Fullname*/
 }
+
