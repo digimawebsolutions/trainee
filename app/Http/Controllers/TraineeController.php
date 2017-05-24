@@ -8,7 +8,12 @@ class TraineeController extends Controller
 {
     public function home()
     {
-        echo "Hello World";
+        return view("trainee.home");
+    }
+    public function home_ajax_customer()
+    {
+        $data["_customer"] = Tbl_customer::limit(5)->get();
+        echo json_encode($data);
     }
     public function boroms()
     {
