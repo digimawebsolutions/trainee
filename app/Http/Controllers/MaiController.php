@@ -84,4 +84,8 @@ class MaiController extends Controller
     {
         //
     }
+    public function mai ()
+    {
+        echo "Ako si Mai";
+    }
 }
