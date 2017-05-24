@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class borroms extends Controller
+class BorromsController extends Controller
 {
     /**
      * Display a listing of the resource.
