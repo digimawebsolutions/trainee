@@ -15,7 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/trainee/brain', 'BrainController@index'); //by: brain
+
+
 Route::get('/boroms', 'TraineeController@boroms');
 Route::get('/joshua', 'TraineeController@josh');
 Route::get('/mai', 'TraineeController@mai');
+<<<<<<< HEAD
 Route::get('/trainee/renz', 'RenzController@renz');
+=======
+<<<<<<< HEAD
+Route::get('/raymond' , 'RaymondController@message');
+=======
+Route::get('/trainee/joshua','JoshuaController@Add');
+>>>>>>> 9ba38205d7b2946dd214648859e723f9ec89e562
+>>>>>>> d5a31eef5bb87e5bee00fe3ac7f2dbfc756938d3
