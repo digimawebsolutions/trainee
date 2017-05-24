@@ -5,6 +5,6 @@ class GuillermoController extends Controller
 {
     function index()
     {
-        echo "Kmsuta?";
+        echo "Guillermo Tabligan";
     }
 }
