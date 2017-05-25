@@ -2,15 +2,15 @@
 namespace App\Http\Controllers;
 use Request;
 use DB;
-use App\Models\Tbl_momai; 
+use App\Models\Tbl_josh; 
 use Redirect;
 use Carbon\Carbon;
-class MaiController extends Controller
+class JoshController extends Controller
 {
     public function index()
     {
-    	$data["_customer"] = Tbl_momai::get();
-        return view("trainee.momai" , $data);
+    	$data["_customer"] = Tbl_josh::get();
+        return view("trainee.josh" , $data);
     }
     public function add()
     {
@@ -20,7 +20,7 @@ class MaiController extends Controller
     	}
     	else
     	{
-    		return view('trainee.momai_add');
+    		return view('trainee.josh_add');
     	}
     	
     }
@@ -33,14 +33,14 @@ class MaiController extends Controller
     	$insert["contact_number"] 	= 	$fields["contact_number"];
     	$insert["created_date"] 	= 	Carbon::now();
 
-    	Tbl_momai::insert($insert);
+    	Tbl_josh::insert($insert);
 
-    	return Redirect::to("/momai")->send();
+    	return Redirect::to("/josh")->send();
     }
     public function delete()
     {
-    	Tbl_momai::where("customer_id", Request::input("id"))->delete();
-    	return Redirect::to("/momai")->send();
+    	Tbl_josh::where("customer_id", Request::input("id"))->delete();
+    	return Redirect::to("/josh")->send();
     }
     public function edit()
     {
@@ -50,8 +50,8 @@ class MaiController extends Controller
     	}
     	else
     	{
-    		$data["customer"] = Tbl_momai::where("customer_id", Request::input("id"))->first();
-    		return view('trainee.momai_edit', $data);
+    		$data["customer"] = Tbl_josh::where("customer_id", Request::input("id"))->first();
+    		return view('trainee.josh_edit', $data);
     	}
     	
     }
@@ -62,9 +62,8 @@ class MaiController extends Controller
     	$insert["last_name"] 		= 	$fields["last_name"];
     	$insert["email"] 			= 	$fields["email"];
     	$insert["contact_number"] 	= 	$fields["contact_number"];
-       
 
-    	Tbl_momai::where("customer_id", Request::input("id"))->update($insert);
-    	return Redirect::to("/momai")->send();
+    	Tbl_josh::where("customer_id", Request::input("id"))->update($insert);
+    	return Redirect::to("/josh")->send();
     }
 }

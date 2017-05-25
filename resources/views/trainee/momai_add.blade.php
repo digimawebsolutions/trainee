@@ -4,7 +4,7 @@
 	{{ csrf_field() }}
 	<div class="clearfix">
 		<h3 class="pull-left">Customer Add</h3>
-		<div class="pull-right"><button type="button" onclick="location.href='/josh'" class="btn btn-primary" >Back</button></div>
+		<div class="pull-right"><button onclick="location.href='/momai'" class="btn btn-primary">Back</button></div>
 	</div>
 
 

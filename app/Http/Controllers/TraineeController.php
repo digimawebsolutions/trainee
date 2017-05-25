@@ -12,7 +12,7 @@ class TraineeController extends Controller
     }
     public function home_ajax_customer()
     {
-        $data["_customer"] = Tbl_customer::limit(5)->get();
+        $data["_customer"] = tlb_momai::limit(5)->get();
         echo json_encode($data);
     }
 
@@ -31,6 +31,7 @@ class TraineeController extends Controller
     {
         $data["_customer"] = Tbl_customer::limit(5)->get();
         return view('trainee.mai', $data);
+       
     }
     public function boroms2()
     {

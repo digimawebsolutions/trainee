@@ -3,8 +3,8 @@
 <form method="post">
 	{{ csrf_field() }}
 	<div class="clearfix">
-		<h3 class="pull-left">Customer Add</h3>
-		<div class="pull-right"><button type="button" onclick="location.href='/josh'" class="btn btn-primary" >Back</button></div>
+		<h3 class="pull-left">Register Admin</h3>
+		<div class="pull-right"><button type="button" onclick="location.href='/monde'" class="btn btn-primary">Back</button></div>
 	</div>
 
 
@@ -22,6 +22,13 @@
 					<input name="last_name" class="form-control" type="text" value="" id="example-text-input">
 				</div>
 			</div>
+			<div class="form-group">
+				<label for="example-text-input" class="col-2 col-form-label">Gender</label>
+				<div class="col-10">
+					<input name="Gender" class="form-control" type="text" value="" id="example-text-input">
+				</div>
+			</div>
+
 		</div>
 		<div class="col-md-6">
 			<div class="form-group">
