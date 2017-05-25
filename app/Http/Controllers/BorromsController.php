@@ -14,9 +14,15 @@ class borroms extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function borroms()
+    {
+       echo "Mark Anthony Borromeo";
+    }
+
+
     public function index()
     {
-        //
+       //
     }
 
     /**
