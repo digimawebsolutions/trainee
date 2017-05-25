@@ -22,6 +22,7 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="{{ Request::segment(1) == '' ? 'active' : '' }}"><a href="/">Home</a></li>
+            <li class="{{ Request::segment(1) == 'crud' ? 'active' : '' }}"><a href="/crud">Crud</a></li>
             <li class="{{ Request::segment(1) == 'joshua' ? 'active' : '' }}"><a href="/joshua?x=10000034&y=5000">Joshua</a></li>
             <li class="{{ Request::segment(1) == 'boroms' ? 'active' : '' }}"><a href="/boroms?x=10000034&y=5000">Boroms</a></li>
             <li class="{{ Request::segment(1) == 'mai' ? 'active' : '' }}"><a href="/mai">Mai</a></li>
