@@ -2,7 +2,8 @@
 namespace App\Http\Controllers;
 use Request;
 use DB;
-use App\Models\Tbl_customer; 
+use App\Models\Tbl_customer;
+use App\Models\tbl_product;
 
 class TraineeController extends Controller
 {
@@ -32,6 +33,7 @@ class TraineeController extends Controller
         $data["_customer"] = tbl_customer::limit(5)->get();
         return view('trainee.mai', $data);
     }
+
     public function boroms2()
     {
         echo "Mark Anthony Broom";
@@ -72,5 +74,11 @@ class TraineeController extends Controller
         }
 
         return $min;
+    }
+
+    public function rommel()
+    {
+        $data["_product"] = tbl_product::limit(5)->get();
+        return view('trainee.rommel', $data);
     }
 }

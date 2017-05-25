@@ -5,6 +5,7 @@ use DB;
 use App\Models\Tbl_customer; 
 use Redirect;
 use Carbon\Carbon;
+
 class CrudController extends Controller
 {
     public function index()
@@ -22,8 +23,8 @@ class CrudController extends Controller
     	{
     		return view('trainee.crud_add');
     	}
-    	
     }
+
     public function add_submit()
     {
     	$fields = Request::input();
@@ -37,11 +38,13 @@ class CrudController extends Controller
 
     	return Redirect::to("/crud")->send();
     }
+
     public function delete()
     {
     	Tbl_customer::where("customer_id", Request::input("id"))->delete();
     	return Redirect::to("/crud")->send();
     }
+
     public function edit()
     {
     	if(Request::isMethod("post"))
@@ -55,6 +58,7 @@ class CrudController extends Controller
     	}
     	
     }
+
     public function edit_submit()
     {
     	$fields = Request::input();

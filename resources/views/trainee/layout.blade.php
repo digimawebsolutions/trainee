@@ -3,7 +3,7 @@
 <head>
 	<title>THIS IS THE TITLE</title>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
@@ -17,7 +17,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand project-name" href="#" >Project name</a>
+          <a class="navbar-brand project-name" href="#" >LARAVEL 5.1</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -26,7 +26,7 @@
             <li class="{{ Request::segment(1) == 'joshua' ? 'active' : '' }}"><a href="/joshua?x=10000034&y=5000">Joshua</a></li>
             <li class="{{ Request::segment(1) == 'boroms' ? 'active' : '' }}"><a href="/boroms?x=10000034&y=5000">Boroms</a></li>
             <li class="{{ Request::segment(1) == 'mai' ? 'active' : '' }}"><a href="/mai">Mai</a></li>
-            <li class="{{ Request::segment(1) == 'mai' ? 'active' : '' }}"><a href="/trainee/rommel">Rommel</a></li>
+            <li class="{{ Request::segment(1) == 'rommel' ? 'active' : '' }}"><a href="/rommel">Rommel</a></li>
 
           </ul>
         </div><!--/.nav-collapse -->

@@ -1,12 +1,14 @@
 @extends('trainee.layout')
 @section('content')
+
 <form method="post">
+
 	{{ csrf_field() }}
+
 	<div class="clearfix">
 		<h3 class="pull-left">Customer Add</h3>
 		<div class="pull-right"><button onclick="location.href='/crud'" class="btn btn-primary">Back</button></div>
 	</div>
-
 
 	<div class="row">
 		<div class="col-md-6">

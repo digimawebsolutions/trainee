@@ -25,6 +25,12 @@ Route::get('/joshua', 'TraineeController@josh');
 Route::get('/mai', 'TraineeController@mai');
 Route::get('/trainee/guillermo', 'GuillermoController@index');
 Route::get('/trainee/rommel', 'RommelController@index');
+
+Route::get('/rommel', 'RommelController@index');
+Route::any('/rommel/add', 'RommelController@add');
+Route::any('/rommel/edit', 'RommelController@edit');
+Route::any('/rommel/delete', 'RommelController@delete');
+
 Route::get('/trainee/borroms', 'BorromsController@borroms');
 Route::get('/trainee/renz', 'RenzController@renz');
 Route::get('/raymond' , 'RaymondController@message');
