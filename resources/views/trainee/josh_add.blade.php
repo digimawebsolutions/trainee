@@ -1,36 +1,49 @@
 @extends('trainee.layout')
 @section('content')
+<form method="post">
+	{{ csrf_field() }}
+	<div class="clearfix">
+		<h3 class="pull-left">Customer Add</h3>
+		<div class="pull-right"><button type="button" onclick="location.href='/josh'" class="btn btn-primary">Back</button></div>
+	</div>
 
-<div class="clearfix">
-	<h3 class="pull-left">Customer List</h3>
-	<div class="pull-right"><button onclick="location.href='/crud/add'" class="btn btn-primary">Add Customer</button></div>
-</div>
 
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<th>Firstname</th>
-			<th>Lastname</th>
-			<th>Date Created</th>
-			<th>E-mail</th>
-			<th>Contact #</th>
-			<th></th>
-		</tr>
-	</thead>
-	<tbody>
-	@foreach($_customer as $customer)
-		<tr>
-			<td>{{ $customer->first_name }}</td>
-			<td>{{ $customer->last_name }}</td>
-			<td>{{ date("F, d Y", strtotime($customer->created_date)) }}</td>
-			<td>{{ $customer->email == "" ? "N/A" : $customer->email }}</td>
-			<td>{{ $customer->contact_number == "" ? "N/A" : $customer->contact_number }}</td>
-			<td class="text-center">
-				<a href="/crud/edit?id={{ $customer->customer_id }}">EDIT</a> |
-				<a onclick="return confirm('Are you sure you want to delete?')" href="/crud/delete?id={{ $customer->customer_id }}">DELETE</a>
-			</td>
-		</tr>
-	@endforeach
-	</tbody>
-</table>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="form-group">
+				<label for="example-text-input" class="col-2 col-form-label">First Name</label>
+				<div class="col-10">
+					<input name="first_name" class="form-control" type="text" value="" id="example-text-input">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="example-text-input" class="col-2 col-form-label">Last Name</label>
+				<div class="col-10">
+					<input name="last_name" class="form-control" type="text" value="" id="example-text-input">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="form-group">
+				<label for="example-text-input" class="col-2 col-form-label">E-Mail</label>
+				<div class="col-10">
+					<input name="email" class="form-control" type="text" value="" id="example-text-input">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="example-text-input" class="col-2 col-form-label">Contact Number</label>
+				<div class="col-10">
+					<input name="contact_number" class="form-control" type="text" value="" id="example-text-input">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12 text-right">
+			<button type="button" class="btn btn-default">CANCEL</button>
+			<button type="submit" class="btn btn-primary">SAVE</button>
+		</div>
+	</div>
+</form>
 @endsection
