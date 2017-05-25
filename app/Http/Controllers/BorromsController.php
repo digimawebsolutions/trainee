@@ -18,38 +18,18 @@ class BorromsController extends Controller
     }
 
 
-    public function index()
+    public function add()
     {
-       //
+       echo "add";
     }
 
-    public function create()
+    public function edit()
     {
-        //
+       echo "edit";
     }
 
-    public function store(Request $request)
+    public function delete()
     {
-        //
-    }
-
-    public function show($id)
-    {
-        //
-    }
-
-    public function edit($id)
-    {
-        //
-    }
-
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    public function destroy($id)
-    {
-        //
+       echo "delete";
     }
 }
