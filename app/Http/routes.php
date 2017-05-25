@@ -23,6 +23,12 @@ Route::get('/trainee/brain', 'BrainController@index'); //by: brain
 Route::get('/boroms', 'TraineeController@boroms');
 Route::get('/joshua', 'TraineeController@josh');
 Route::get('/mai', 'TraineeController@mai');
+
+Route::get('/monde', 'RaymondController@index');
+Route::any('/monde/add', 'RaymondController@add');
+Route::any('/monde/edit', 'RaymondController@edit');
+Route::any('/monde/delete', 'RaymondController@delete');
+
 Route::get('/trainee/guillermo', 'GuillermoController@index');
 Route::get('/trainee/rommel', 'RommelController@index');
 Route::get('/trainee/borroms', 'BorromsController@borroms');
