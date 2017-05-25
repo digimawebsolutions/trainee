@@ -15,6 +15,7 @@ class TraineeController extends Controller
         $data["_customer"] = Tbl_customer::limit(5)->get();
         echo json_encode($data);
     }
+
     public function boroms()
     {
         $x = Request::input("x");
