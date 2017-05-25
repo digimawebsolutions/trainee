@@ -27,6 +27,8 @@
             <li class="{{ Request::segment(1) == 'boroms' ? 'active' : '' }}"><a href="/boroms?x=10000034&y=5000">Boroms</a></li>
             <li class="{{ Request::segment(1) == 'mai' ? 'active' : '' }}"><a href="/mai">Mai</a></li>
             <li class="{{ Request::segment(1) == 'josh' ? 'active' : '' }}"><a href="/josh">Josh</a></li>
+            <li class="{{ Request::segment(1) == 'monde' ? 'active' : '' }}"><a href="/monde">Raymond</a></li>
+
           </ul>
         </div><!--/.nav-collapse -->
       </div>
