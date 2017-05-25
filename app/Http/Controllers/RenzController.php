@@ -19,6 +19,11 @@ class RenzController extends Controller
         //
     }
 
+    public function renz()
+    {
+        echo "Renz Marion B. Remias";
+    }
+
     /**
      * Show the form for creating a new resource.
      *
