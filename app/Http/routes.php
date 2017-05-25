@@ -31,7 +31,12 @@ Route::any('/monde/delete', 'RaymondController@delete');
 
 Route::get('/trainee/guillermo', 'GuillermoController@index');
 Route::get('/trainee/rommel', 'RommelController@index');
+
 Route::get('/trainee/borroms', 'BorromsController@borroms');
+Route::any('/trainee/borroms/add', 'BorromsController@add');
+Route::any('/trainee/borroms/edit', 'BorromsController@edit');
+Route::any('/trainee/borroms/delete', 'BorromsController@delete');
+
 Route::get('/trainee/renz', 'RenzController@renz');
 Route::get('/raymond' , 'RaymondController@message');
 Route::get('/trainee/joshua','JoshuaController@Add');
