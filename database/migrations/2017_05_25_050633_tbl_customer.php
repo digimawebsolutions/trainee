@@ -28,6 +28,6 @@ class TblCustomer extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('tbl_customer')
     }
 }
