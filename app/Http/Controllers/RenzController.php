@@ -23,6 +23,11 @@ class RenzController extends Controller
     {
         echo "Renz Marion B. Remias";
     }
+    
+    public function add_user()
+    {
+        return view('crud_renz.add');
+    }
 
     /**
      * Show the form for creating a new resource.

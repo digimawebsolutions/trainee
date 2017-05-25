@@ -23,3 +23,4 @@ Route::get('/trainee/borroms', 'BorromsController@borroms');
 Route::get('/trainee/renz', 'RenzController@renz');
 Route::get('/raymond' , 'RaymondController@message');
 Route::get('/trainee/joshua','JoshuaController@Add');
+Route::get('/trainee/renz', 'RenzController@add_user');
