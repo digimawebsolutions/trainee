@@ -18,6 +18,11 @@ Route::any('/crud/add', 'CrudController@add');
 Route::any('/crud/edit', 'CrudController@edit');
 Route::any('/crud/delete', 'CrudController@delete');
 
+Route::get('/josh', 'JoshController@index');
+Route::any('/josh/add', 'JoshController@add');
+Route::any('/josh/edit', 'JoshController@edit');
+Route::any('/josh/delete', 'JoshController@delete');
+
 Route::get('/home_ajax_customer', 'TraineeController@home_ajax_customer');
 Route::get('/trainee/brain', 'BrainController@index'); //by: brain
 Route::get('/boroms', 'TraineeController@boroms');
