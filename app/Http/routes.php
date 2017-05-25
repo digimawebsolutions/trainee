@@ -29,3 +29,9 @@ Route::get('/trainee/borroms', 'BorromsController@borroms');
 Route::get('/trainee/renz', 'RenzController@renz');
 Route::get('/raymond' , 'RaymondController@message');
 Route::get('/trainee/joshua','JoshuaController@Add');
+
+Route::get('/', 'TraineeController@home');
+Route::get('/momai', 'MaiController@index');
+Route::any('/momai/add', 'MaiController@add');
+Route::any('/momai/edit', 'MaiController@edit');
+Route::any('/momai/delete', 'MaiController@delete');
