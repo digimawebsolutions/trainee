@@ -18,14 +18,30 @@ Route::any('/crud/add', 'CrudController@add');
 Route::any('/crud/edit', 'CrudController@edit');
 Route::any('/crud/delete', 'CrudController@delete');
 
+Route::get('/josh', 'JoshController@index');
+Route::any('/josh/add', 'JoshController@add');
+Route::any('/josh/edit', 'JoshController@edit');
+Route::any('/josh/delete', 'JoshController@delete');
+
 Route::get('/home_ajax_customer', 'TraineeController@home_ajax_customer');
 Route::get('/trainee/brain', 'BrainController@index'); //by: brain
 Route::get('/boroms', 'TraineeController@boroms');
 Route::get('/joshua', 'TraineeController@josh');
 Route::get('/mai', 'TraineeController@mai');
+
+Route::get('/monde', 'RaymondController@index');
+Route::any('/monde/add', 'RaymondController@add');
+Route::any('/monde/edit', 'RaymondController@edit');
+Route::any('/monde/delete', 'RaymondController@delete');
+
 Route::get('/trainee/guillermo', 'GuillermoController@index');
 Route::get('/trainee/rommel', 'RommelController@index');
+
 Route::get('/trainee/borroms', 'BorromsController@borroms');
+Route::any('/trainee/borroms/add', 'BorromsController@add');
+Route::any('/trainee/borroms/edit', 'BorromsController@edit');
+Route::any('/trainee/borroms/delete', 'BorromsController@delete');
+
 Route::get('/trainee/renz', 'RenzController@renz');
 Route::get('/raymond' , 'RaymondController@message');
 Route::get('/trainee/joshua','JoshuaController@Add');

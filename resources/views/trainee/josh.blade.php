@@ -3,7 +3,7 @@
 
 <div class="clearfix">
 	<h3 class="pull-left">Customer List</h3>
-	<div class="pull-right"><button type="button" onclick="location.href='/crud/add'" class="btn btn-primary">Add Customer</button></div>
+	<div class="pull-right"><button  onclick="location.href='/josh/add'" class="btn btn-primary">Add Customer</button></div>
 </div>
 
 <table class="table table-bordered">
@@ -26,8 +26,8 @@
 			<td>{{ $customer->email == "" ? "N/A" : $customer->email }}</td>
 			<td>{{ $customer->contact_number == "" ? "N/A" : $customer->contact_number }}</td>
 			<td class="text-center">
-				<a href="/crud/edit?id={{ $customer->customer_id }}">EDIT</a> |
-				<a onclick="return confirm('Are you sure you want to delete?')" href="/crud/delete?id={{ $customer->customer_id }}">DELETE</a>
+				<a href="/josh/edit?id={{ $customer->customer_id }}">EDIT</a> |
+				<a onclick="return confirm('Are you sure you want to delete?')" href="/josh/delete?id={{ $customer->customer_id }}">DELETE</a>
 			</td>
 		</tr>
 	@endforeach
