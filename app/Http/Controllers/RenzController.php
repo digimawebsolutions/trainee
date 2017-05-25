@@ -19,16 +19,11 @@ class RenzController extends Controller
         //
     }
 
-    public function renz()
+    public function view_my_index()
     {
-        echo "Renz Marion B. Remias";
+        return view('trainee.renz');
     }
     
-    public function add_user()
-    {
-        return view('crud_renz.add');
-    }
-
     /**
      * Show the form for creating a new resource.
      *
