@@ -1,14 +1,12 @@
 @extends('trainee.layout')
 @section('content')
-
 <form method="post">
-
 	{{ csrf_field() }}
-
 	<div class="clearfix">
 		<h3 class="pull-left">Customer Add</h3>
-		<div class="pull-right"><button type="button" onclick="location.href='/josh'" class="btn btn-primary" >Back</button></div>
+		<div class="pull-right"><button onclick="location.href='/momai'" class="btn btn-primary">Back</button></div>
 	</div>
+
 
 	<div class="row">
 		<div class="col-md-6">
@@ -38,6 +36,7 @@
 					<input name="contact_number" class="form-control" type="text" value="" id="example-text-input">
 				</div>
 			</div>
+			
 		</div>
 	</div>
 
