@@ -12,13 +12,14 @@ class TblCustomer extends Migration
      */
     public function up()
     {
-        $table->engine = 'InnoDB';
-        $table->increments('customer_id');
-        $table->string('first_name');
-        $table->string('last_name');
-        $table->string('created_date');
-        $table->string('email');
-        $table->string('contact_number');
+        Schema::create('tbl_customer', function (Blueprint $table)
+        {
+            $table->engine = 'InnoDB';
+            $table->increments('customer_id');
+            $table->string('first_name');
+            $table->string('last_name');
+            $table->string('created_date');
+        });
     }
 
     /**
