@@ -3,7 +3,7 @@
 
 <div class="clearfix">
 	<h3 class="pull-left">Customer List</h3>
-	<div class="pull-right"><button onclick="location.href='/crud/add'" class="btn btn-primary">Add Customer</button></div>
+	<div class="pull-right"><button type="button" onclick="location.href='/crud/add'" class="btn btn-primary">Add Customer</button></div>
 </div>
 
 <table class="table table-bordered">
