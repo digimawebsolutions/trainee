@@ -1,9 +1,28 @@
 @extends('trainee.layout')
 @section('content')
 
-<div class="clearfix">
+
+<style type="text/css">
+
+		#grad {
+		  background: black; /* For browsers that do not support gradients */
+		  background: -webkit-linear-gradient(left,rgb(255, 255, 255), rgb(128, 128, 128)); /*Safari 5.1-6*/
+		  background: -o-linear-gradient(right,rgb(255, 255, 255), rgb(128, 128, 128)); /*Opera 11.1-12*/
+		  background: -moz-linear-gradient(right,rgb(255, 255, 255), rgb(128, 128, 128)); /*Fx 3.6-15*/
+		  background: linear-gradient(to right, rgb(255, 255, 255), rgb(128, 128, 128)); /*Standard*/
+		}
+
+</style>
+
+<div class="clearfix" id="grad">
 	<h3 class="pull-left">Product List</h3>
-	<div class="pull-right"><button onclick="location.href='/rommel/add'" class="btn btn-primary">Add Product</button></div>
+	{{-- <div class="pull-right"><button onclick="location.href='/rommel/add'" class="btn btn-primary">Add Product</button></div> --}}
+</div>
+<br>
+<div class="pull-right">
+    <button button onclick="location.href='/rommel/add'" type="button" class="btn btn-primary btn-sm">
+      <span class="glyphicon glyphicon-plus-sign"></span> ADD PRODUCT
+    </button>
 </div>
 
 <table class="table table-striped">
