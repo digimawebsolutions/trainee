@@ -13,7 +13,6 @@
 
 </style>
 
-
 <form method="post">
 	
 	{{ csrf_field() }} 
@@ -23,8 +22,10 @@
 		{{-- <div class="pull-right"><button onclick="location.href='/rommel'" class="btn btn-primary">Back</button></div> --}}
 	</div>
 	<br>
-		<div class="pull-right"><button onclick="location.href='/rommel'" type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-circle-arrow-left"></span> BACK </button></div>
-	<br>
+		<div class="pull-right"><button onclick="location.href='/rommel'" type="button" class="btn btn-primary btn-sm">
+			<span class="glyphicon glyphicon-circle-arrow-left"></span> BACK </button>
+		</div>
+	<br><br>
 	<div class="col-md-6">
 		<div class="row">
 			<div class="form-group">
@@ -41,15 +42,15 @@
 			</div>
 		</div>
 	</div>
-		<div class="col-md-5">
+		<div class="col-md-6">
 			<div class="form-group">
-				<label for="example-text-input" class="col-2 col-form-label">Product Price</label>
+				<label for="example-text-input" class="col-2 col-form-label">Price</label>
 				<div class="col-10">
 					<input name="product_price" class="form-control" type="text" value="" id="example-text-input">
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="example-text-input" class="col-2 col-form-label">Product Quantity</label>
+				<label for="example-text-input" class="col-2 col-form-label">Quantity</label>
 				<div class="col-10">
 					<input name="product_quantity" class="form-control" type="text" value="" id="example-text-input">
 				</div>

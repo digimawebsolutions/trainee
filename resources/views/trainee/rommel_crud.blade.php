@@ -21,7 +21,7 @@
 <br>
 <div class="pull-right">
     <button button onclick="location.href='/rommel/add'" type="button" class="btn btn-primary btn-sm">
-      <span class="glyphicon glyphicon-plus-sign"></span> ADD PRODUCT
+    	<span class="glyphicon glyphicon-plus-sign"></span> ADD PRODUCT
     </button>
 </div>
 
