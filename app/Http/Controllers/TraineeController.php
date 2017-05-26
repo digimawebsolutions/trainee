@@ -2,7 +2,8 @@
 namespace App\Http\Controllers;
 use Request;
 use DB;
-use App\Models\Tbl_customer; 
+use App\Models\Tbl_customer;
+
 
 class TraineeController extends Controller
 {
@@ -12,7 +13,7 @@ class TraineeController extends Controller
     }
     public function home_ajax_customer()
     {
-        $data["_customer"] = tlb_momai::limit(5)->get();
+        $data["_customer"] = Tbl_customer::limit(5)->get();
         echo json_encode($data);
     }
 
@@ -29,10 +30,10 @@ class TraineeController extends Controller
     }
     public function mai()
     {
-        $data["_customer"] = Tbl_customer::limit(5)->get();
+        $data["_customer"] = tbl_customer::limit(5)->get();
         return view('trainee.mai', $data);
-       
     }
+
     public function boroms2()
     {
         echo "Mark Anthony Broom";

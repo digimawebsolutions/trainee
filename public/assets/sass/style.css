@@ -1,0 +1,47 @@
+body {
+  background: white; }
+
+.nav_color {
+  background: #999999;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .nav_color .container .navbar-header button {
+    margin-top: 10px;
+    border-radius: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: #fff 1px solid; }
+    .nav_color .container .navbar-header button span #nav-i {
+      color: #999999; }
+  .nav_color .container a {
+    color: #fff;
+    text-transform: uppercase; }
+  .nav_color .container a:hover {
+    color: #333;
+    background: #999999; }
+  .nav_color .container ul #nav-button {
+    margin-top: 10px;
+    border-radius: 0px;
+    background: #999999;
+    border: #fff 1px solid;
+    color: #fff;
+    margin-left: 14px; }
+
+.container #myCarousel {
+  margin-top: 80px; }
+
+.content1 {
+  margin-top: 50px;
+  background: #EDEEF0; }
+  .content1 ul {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px; }
+    .content1 ul li {
+      display: inline-block; }
+      .content1 ul li a {
+        padding-left: 40px;
+        color: black; }
+
+/*# sourceMappingURL=style.css.map */
