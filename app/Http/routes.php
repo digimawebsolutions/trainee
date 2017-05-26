@@ -38,19 +38,18 @@ Route::get('/trainee/guillermo', 'GuillermoController@index');
 Route::get('/trainee/rommel', 'RommelController@index');
 
 Route::get('/trainee/borroms', 'BorromsController@borroms');
-<<<<<<< HEAD
+
 Route::get('/renz', 'RenzController@view_my_index');
 Route::get('/renz_crud', 'RenzCrudController@renz_crud');
 Route::any('/renz_crud_add', 'RenzCrudController@renz_crud_add');
 Route::any('/renz_crud/delete', 'RenzCrudController@delete');
 Route::any('/renz_crud/edit', 'RenzCrudController@edit');
-=======
+
 Route::any('/trainee/borroms/add', 'BorromsController@add');
 Route::any('/trainee/borroms/edit', 'BorromsController@edit');
 Route::any('/trainee/borroms/delete', 'BorromsController@delete');
 
 Route::get('/trainee/renz', 'RenzController@renz');
->>>>>>> 377417838a93b32ce213441dd43d7811f3d22863
 Route::get('/raymond' , 'RaymondController@message');
 Route::get('/trainee/joshua','JoshuaController@Add');
 

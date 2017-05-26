@@ -14,7 +14,7 @@ class BorromsController extends Controller
 {
     public function borroms()
     {
-       echo "Bonjour"."<br>"."Mark Anthony Borromeo";
+       return view("trainee.employee"); 
     }
 
 
