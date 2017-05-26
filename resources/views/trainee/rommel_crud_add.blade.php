@@ -23,9 +23,8 @@
 		{{-- <div class="pull-right"><button onclick="location.href='/rommel'" class="btn btn-primary">Back</button></div> --}}
 	</div>
 	<br>
-	<div>
 		<div class="pull-right"><button onclick="location.href='/rommel'" type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-circle-arrow-left"></span> BACK </button></div>
-	</div>
+	<br>
 	<div class="col-md-6">
 		<div class="row">
 			<div class="form-group">
@@ -42,7 +41,7 @@
 			</div>
 		</div>
 	</div>
-		<div class="col-md-6">
+		<div class="col-md-5">
 			<div class="form-group">
 				<label for="example-text-input" class="col-2 col-form-label">Product Price</label>
 				<div class="col-10">
