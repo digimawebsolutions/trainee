@@ -1,91 +1,70 @@
 <?php
-
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
-
+use Request;
+use DB;
+use App\Models\Tbl_momai; 
+use Redirect;
+use Carbon\Carbon;
 class MaiController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
+    	$data["_customer"] = Tbl_momai::get();
+        return view("trainee.momai" , $data);
     }
+    public function add()
+    {
+    	if(Request::isMethod("post"))
+    	{
+    		$this->add_submit();
+    	}
+    	else
+    	{
+    		return view('trainee.momai_add');
+    	}
+    	
+    }
+    public function add_submit()
+    {
+    	$fields = Request::input();
+    	$insert["first_name"] 		= 	$fields["first_name"];
+    	$insert["last_name"] 		= 	$fields["last_name"];
+    	$insert["email"] 			= 	$fields["email"];
+    	$insert["contact_number"] 	= 	$fields["contact_number"];
+    	$insert["created_date"] 	= 	Carbon::now();
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+    	Tbl_momai::insert($insert);
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+    	return Redirect::to("/momai")->send();
     }
+    public function delete()
+    {
+    	Tbl_momai::where("customer_id", Request::input("id"))->delete();
+    	return Redirect::to("/momai")->send();
+    }
+    public function edit()
+    {
+    	if(Request::isMethod("post"))
+    	{
+    		$this->edit_submit();
+    	}
+    	else
+    	{
+    		$data["customer"] = Tbl_momai::where("customer_id", Request::input("id"))->first();
+    		return view('trainee.momai_edit', $data);
+    	}
+    	
+    }
+    public function edit_submit()
+    {
+    	$fields = Request::input();
+    	$insert["first_name"] 		= 	$fields["first_name"];
+    	$insert["last_name"] 		= 	$fields["last_name"];
+    	$insert["email"] 			= 	$fields["email"];
+    	$insert["contact_number"] 	= 	$fields["contact_number"];
+       
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
-    public function mai ()
-    {
-        echo "Ako si Mai";
+    	Tbl_momai::where("customer_id", Request::input("id"))->update($insert);
+    	return Redirect::to("/momai")->send();
     }
 }

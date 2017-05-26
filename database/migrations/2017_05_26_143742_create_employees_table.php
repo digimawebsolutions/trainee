@@ -12,8 +12,7 @@ class CreateEmployeesTable extends Migration
      */
     public function up()
     {
-        Schema::create('employees', function (Blueprint $table)
-        {
+        Schema::table('employees', function (Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('employee_id');
             $table->string('employee_first_name');
@@ -32,7 +31,7 @@ class CreateEmployeesTable extends Migration
     public function down()
     {
         Schema::table('employees', function (Blueprint $table) {
-            //
+            Schema::drop('employee');
         });
     }
 }
