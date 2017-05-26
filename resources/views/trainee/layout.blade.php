@@ -6,6 +6,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -17,12 +20,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-<<<<<<< HEAD
           <a class="navbar-brand project-name" href="#" >Project name</a>
-         
-=======
           <a class="navbar-brand project-name" href="#" >LARAVEL 5.1</a>
->>>>>>> ab7a5e5b48679a17debc5ad9e5b982bcb87e9305
+
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -32,11 +32,14 @@
             <li class="{{ Request::segment(1) == 'boroms' ? 'active' : '' }}"><a href="/boroms?x=10000034&y=5000">Boroms</a></li>
             <li class="{{ Request::segment(1) == 'mai' ? 'active' : '' }}"><a href="/mai">Mai</a></li>
 
+
             <li class="{{ Request::segment(1) == 'momai' ? 'active' : '' }}"><a href="/momai">Momai</a></li>
             <li class="{{ Request::segment(1) == 'josh' ? 'active' : '' }}"><a href="/josh">Josh</a></li>
             <li class="{{ Request::segment(1) == 'monde' ? 'active' : '' }}"><a href="/monde">Raymond</a></li>
 
+
             <li class="{{ Request::segment(1) == 'rommel' ? 'active' : '' }}"><a href="/rommel">Rommel</a></li>
+
             <li class="{{ Request::segment(1) == 'momai' ? 'active' : '' }}"><a href="/momai">Momai</a></li>
             <li class="{{ Request::segment(1) == 'josh' ? 'active' : '' }}"><a href="/josh">Josh</a></li>
             <li class="{{ Request::segment(1) == 'monde' ? 'active' : '' }}"><a href="/monde">Raymond</a></li>
