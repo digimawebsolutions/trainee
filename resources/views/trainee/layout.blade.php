@@ -18,6 +18,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand project-name" href="#" >Project name</a>
+         
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -26,13 +27,10 @@
             <li class="{{ Request::segment(1) == 'joshua' ? 'active' : '' }}"><a href="/joshua?x=10000034&y=5000">Joshua</a></li>
             <li class="{{ Request::segment(1) == 'boroms' ? 'active' : '' }}"><a href="/boroms?x=10000034&y=5000">Boroms</a></li>
             <li class="{{ Request::segment(1) == 'mai' ? 'active' : '' }}"><a href="/mai">Mai</a></li>
-<<<<<<< HEAD
             <li class="{{ Request::segment(1) == 'momai' ? 'active' : '' }}"><a href="/momai">Momai</a></li>
-=======
             <li class="{{ Request::segment(1) == 'josh' ? 'active' : '' }}"><a href="/josh">Josh</a></li>
             <li class="{{ Request::segment(1) == 'monde' ? 'active' : '' }}"><a href="/monde">Raymond</a></li>
 
->>>>>>> a95860930d9d264b64ff94a6fdbc1d15e9c963c2
           </ul>
         </div><!--/.nav-collapse -->
       </div>

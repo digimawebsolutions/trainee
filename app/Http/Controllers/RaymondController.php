@@ -26,17 +26,19 @@ class RaymondController extends Controller
     }
     public function add_submit()
     {
+         
         $fields = Request::input();
         $insert["first_name"]       =   $fields["first_name"];
         $insert["last_name"]        =   $fields["last_name"];
         $insert["gender"]           =   $fields["Gender"];
         $insert["email"]            =   $fields["email"];
         $insert["contact_number"]   =   $fields["contact_number"];
+        $insert["bday"]             =   $fields["Bday"];
         $insert["created_date"]     =   Carbon::now();
 
         Tbl_admin::insert($insert);
-
-        return Redirect::to("/monde")->send();
+         return Redirect::to("/monde")->send();
+       
     }
     public function delete()
     {
@@ -64,6 +66,7 @@ class RaymondController extends Controller
         $insert["gender"]           =   $fields["Gender"];
         $insert["email"]            =   $fields["email"];
         $insert["contact_number"]   =   $fields["contact_number"];
+        $insert["bday"]             =   $fields["bday"];
 
         Tbl_admin::where("user_id", Request::input("id"))->update($insert);
         return Redirect::to("/monde")->send();
