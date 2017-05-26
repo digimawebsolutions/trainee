@@ -1,3 +1,6 @@
+@extends('trainee.layout')
+@section('content')
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,3 +24,5 @@
   </table>
 </body>
 </html>
+
+@endsection
