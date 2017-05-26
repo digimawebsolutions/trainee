@@ -22,6 +22,12 @@
 					<input name="last_name" class="form-control" type="text" value="{{ $customer->last_name }}" id="example-text-input">
 				</div>
 			</div>
+			<div class="form-group">
+				<label for="example-text-input" class="col-2 col-form-label">Gender</label>
+				<div class="col-10">
+					<input name="gender" class="form-control" type="text" value="{{ $customer->gender }}" id="example-text-input">
+				</div>
+			</div>
 		</div>
 		<div class="col-md-6">
 			<div class="form-group">
@@ -34,6 +40,12 @@
 				<label for="example-text-input" class="col-2 col-form-label">Contact Number</label>
 				<div class="col-10">
 					<input name="contact_number" class="form-control" type="text" value="{{ $customer->contact_number }}" id="example-text-input">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="example-text-input" class="col-2 col-form-label">Birthday</label>
+				<div class="col-10">
+					<input name="bday" class="form-control" type="text" value="{{ $customer->bday }}" id="example-text-input">
 				</div>
 			</div>
 			

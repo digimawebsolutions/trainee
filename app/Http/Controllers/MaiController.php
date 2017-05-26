@@ -31,7 +31,10 @@ class MaiController extends Controller
     	$insert["last_name"] 		= 	$fields["last_name"];
     	$insert["email"] 			= 	$fields["email"];
     	$insert["contact_number"] 	= 	$fields["contact_number"];
-    	$insert["created_date"] 	= 	Carbon::now();
+        $insert["bday"]             =   $fields["bday"];
+        $insert["gender"]           =   $fields["gender"];
+        $insert["created_date"] 	= 	Carbon::now();
+       
 
     	Tbl_momai::insert($insert);
 
@@ -62,7 +65,8 @@ class MaiController extends Controller
     	$insert["last_name"] 		= 	$fields["last_name"];
     	$insert["email"] 			= 	$fields["email"];
     	$insert["contact_number"] 	= 	$fields["contact_number"];
-       
+        $insert["bday"]             =   $fields["bday"];
+        $insert["gender"]          =   $fields["gender"];
 
     	Tbl_momai::where("customer_id", Request::input("id"))->update($insert);
     	return Redirect::to("/momai")->send();
