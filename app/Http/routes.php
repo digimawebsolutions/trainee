@@ -45,3 +45,5 @@ Route::any('/trainee/borroms/delete', 'BorromsController@delete');
 Route::get('/trainee/renz', 'RenzController@renz');
 Route::get('/raymond' , 'RaymondController@message');
 Route::get('/trainee/joshua','JoshuaController@Add');
+
+Route::get('/flat','FlatController@index');

@@ -1,0 +1,76 @@
+
+$primary-color: #fff;
+$secondary-color: #999999;
+$third-color: #333;
+$fourth-color: #EDEEF0;
+
+body{
+background: white;
+	
+	
+}
+.nav_color{
+	background: $secondary-color;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	.container{
+		.navbar-header{
+			button{
+				margin-top: 10px;
+				border-radius: 0px;
+				padding-left: 15px;
+				padding-right: 15px;
+				border:$primary-color 1px solid;
+				span{
+					#nav-i{
+						
+						color:$secondary-color;
+					}
+				}
+			}
+		}
+		a{
+			color: $primary-color;
+			text-transform: uppercase;
+			
+		}
+		a:hover{
+				color: $third-color;
+				background: $secondary-color;
+			}
+		ul{
+			#nav-button{
+				margin-top: 10px;
+				border-radius: 0px;
+				background: $secondary-color;
+				border:$primary-color 1px solid;
+				color:$primary-color;
+				margin-left:14px;
+			}
+		}
+	}
+}
+.container{
+	#myCarousel{
+		margin-top: 80px;
+	}
+}
+.content1{
+	margin-top: 50px;
+	background: $fourth-color;
+	ul{
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-size:15px;
+
+		li{
+			display: inline-block;
+			a{
+				padding-left: 40px;
+				color: black; 
+			}
+		}
+	}
+}
