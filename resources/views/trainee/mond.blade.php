@@ -3,7 +3,8 @@
 
 <div class="clearfix">
 	<h3 class="pull-left">Admin List</h3>
-	<div class="pull-right"><button onclick="location.href='/monde/add'" class="btn btn-primary">Register</button></div>
+	<div class="pull-right"/><button onclick="location.href='/monde/add'" class="btn btn-primary">Register</button></div>
+	<div class="pull-right"><button onclick="location.href='/monde/login'" class="btn btn-primary">Login</button></div>
 </div>
 
 <table class="table table-bordered">

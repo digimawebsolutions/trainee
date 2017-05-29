@@ -7,6 +7,22 @@ use Redirect;
 use Carbon\Carbon;
 class RaymondController extends Controller
 {
+
+    public function login()
+    {
+      return view("myhome.home");
+    }
+
+    public function login_verify();
+    {
+        $uname = Request::input("user");
+        $pass = Request::input("pass");
+
+        
+
+
+    }
+
     public function index()
     {
         $data["_customer"] = Tbl_admin::get();

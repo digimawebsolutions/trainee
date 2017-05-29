@@ -20,7 +20,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand project-name" href="#" >Project name</a>
+
           <a class="navbar-brand project-name" href="#" >LARAVEL 5.1</a>
 
         </div>
@@ -32,13 +32,6 @@
             <li class="{{ Request::segment(1) == 'boroms' ? 'active' : '' }}"><a href="/boroms?x=10000034&y=5000">Boroms</a></li>
             <li class="{{ Request::segment(1) == 'mai' ? 'active' : '' }}"><a href="/mai">Mai</a></li>
 
-
-            <li class="{{ Request::segment(1) == 'momai' ? 'active' : '' }}"><a href="/momai">Momai</a></li>
-            <li class="{{ Request::segment(1) == 'josh' ? 'active' : '' }}"><a href="/josh">Josh</a></li>
-            <li class="{{ Request::segment(1) == 'monde' ? 'active' : '' }}"><a href="/monde">Raymond</a></li>
-
-
-            <li class="{{ Request::segment(1) == 'rommel' ? 'active' : '' }}"><a href="/rommel">Rommel</a></li>
 
             <li class="{{ Request::segment(1) == 'momai' ? 'active' : '' }}"><a href="/momai">Momai</a></li>
             <li class="{{ Request::segment(1) == 'josh' ? 'active' : '' }}"><a href="/josh">Josh</a></li>

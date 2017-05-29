@@ -1,5 +1,6 @@
 @extends('trainee.layout')
 @section('content')
+
 <form method="post">
 	{{ csrf_field() }}
 	<div class="clearfix">
