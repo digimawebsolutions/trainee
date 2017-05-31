@@ -66,4 +66,4 @@ Route::get('/momai', 'MaiController@index');
 Route::any('/momai/add', 'MaiController@add');
 Route::any('/momai/edit', 'MaiController@edit');
 Route::any('/momai/delete', 'MaiController@delete');
-
+Route::any('/momai/login', 'MaiController@login');

@@ -3,7 +3,7 @@
 <form method="post">
 	{{ csrf_field() }}
 	<div class="clearfix">
-		<h3 class="pull-left"> <i class="fa fa-id-card"> User Add</i></h3>
+		<h3 class="pull-left"> <i class="fa fa-user-circle-o"> Add User</i></h3>
 		<div class="pull-right"><button onclick="location.href='/momai'" class="btn btn-primary">Back</button></div>
 	</div>
 
@@ -54,7 +54,7 @@
 
 	<div class="row">
 		<div class="col-md-12 text-right">
-			<button type="button" class="btn btn-default">CANCEL</button>
+			<button type="button" class="btn btn-default" onclick="location.href='/momai'">CANCEL</button>
 			<button type="submit" class="btn btn-primary">SAVE</button>
 		</div>
 	</div>

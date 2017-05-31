@@ -24,6 +24,8 @@ class MaiController extends Controller
     	}
     	
     }
+
+
     public function add_submit()
     {
     	$fields = Request::input();
@@ -58,6 +60,11 @@ class MaiController extends Controller
     	}
     	
     }
+    public function login()
+    {
+        return view('mlogin.loginsection');
+    }
+
     public function edit_submit()
     {
     	$fields = Request::input();
@@ -71,4 +78,5 @@ class MaiController extends Controller
     	Tbl_momai::where("customer_id", Request::input("id"))->update($insert);
     	return Redirect::to("/momai")->send();
     }
+    
 }

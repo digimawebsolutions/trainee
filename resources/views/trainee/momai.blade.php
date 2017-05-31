@@ -3,7 +3,11 @@
 
 <div class="clearfix">
 	<h3 class="pull-left"><i class="fa fa-id-card"> User List</i></h3>
-	<div class="pull-right"><button onclick="location.href='/momai/add'" class="btn btn-primary">Add User</button></div>
+	<div class="pull-right">
+	<button onclick="location.href='/momai/login'" class="btn btn-primary" style="margin-right: 100px;">Log in</button>
+	<button onclick="location.href='/momai/add'" class="btn btn-primary">Add User</button>
+	</div>
+
 </div>
 
 <table class="table table-bordered">
