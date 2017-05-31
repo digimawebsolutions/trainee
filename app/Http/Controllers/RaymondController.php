@@ -27,18 +27,7 @@ class RaymondController extends Controller
             return view("myhome.home");
             
         }
-   
-    public function member_register()
-    {
-         
-        $fields = Request::input();
-        $insert["username"]       =   $fields["user"];
-        $insert["password"]        =   $fields["pass"];
 
-        Tbl_admin::insert($insert);
-         return Redirect::to("/monde")->send();
-       
-    }
 
 
 

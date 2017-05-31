@@ -21,7 +21,7 @@
             <span class="icon-bar"></span>
           </button>
 
-          <a class="navbar-brand project-name" href="#" >BAHAY MATANDA</a>
+          <a class="navbar-brand project-name" href="#" >TITLE</a>
 
         </div>
         <div id="navbar" class="collapse navbar-collapse">
