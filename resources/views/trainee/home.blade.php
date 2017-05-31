@@ -2,6 +2,7 @@
 @section('content')
 
 <div class="btn-container">
+
 	<button style="background-color: lightblue;" class="btn btn" description="Time is gold when watching bold.">RENZ</button>
 	<button class="btn btn-default" description="Game is 8.">RAYMOND</button>
 	<button class="btn btn-default" description="Today is your tomorrow 8:00am.">ROMMEL</button>
