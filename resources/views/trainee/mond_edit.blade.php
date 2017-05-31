@@ -42,6 +42,12 @@
 					<input name="contact_number" class="form-control" type="text" value="{{ $customer->contact_number }}" id="example-text-input">
 				</div>
 			</div>
+				<div class="form-group">
+				<label for="example-text-input" class="col-2 col-form-label">Birthday</label>
+				<div class="col-10">
+					<input name="bday" class="form-control" type="text" value="{{ $customer->bday }}" id="example-text-input">
+				</div>
+			</div>
 		</div>
 	</div>
 

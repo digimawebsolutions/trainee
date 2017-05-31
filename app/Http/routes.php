@@ -29,6 +29,7 @@ Route::get('/boroms', 'TraineeController@boroms');
 Route::get('/joshua', 'TraineeController@josh');
 Route::get('/mai', 'TraineeController@mai');
 
+Route::get('/monde/login', 'RaymondController@login');
 Route::get('/monde', 'RaymondController@index');
 Route::any('/monde/add', 'RaymondController@add');
 Route::any('/monde/edit', 'RaymondController@edit');
