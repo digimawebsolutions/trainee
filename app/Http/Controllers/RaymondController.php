@@ -13,12 +13,33 @@ class RaymondController extends Controller
       return view("myhome.home");
     }
 
-    public function login_verify();
+    public function login_verify()
     {
         $uname = Request::input("user");
-        $pass = Request::input("pass");
+        $pass = Request::input("password");
 
-        
+        $check_if_is_true = Tbl_admin::where(['username'=>$uname,'password'=>$pword])->get();
+        if(count($check_if_is_true)>0)
+        {
+            return view("trainee.mond");
+        }
+        else{
+            return view("myhome.home");
+            
+        }
+   
+    public function member_register()
+    {
+         
+        $fields = Request::input();
+        $insert["username"]       =   $fields["user"];
+        $insert["password"]        =   $fields["pass"];
+
+        Tbl_admin::insert($insert);
+         return Redirect::to("/monde")->send();
+       
+    }
+
 
 
     }
@@ -88,3 +109,4 @@ class RaymondController extends Controller
         return Redirect::to("/monde")->send();
     }
 }
+

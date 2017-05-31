@@ -1,15 +1,20 @@
 @extends('myhome.layout')
 @section('signin-sec')
 
+
+
 <div class="container">
 	<div class="login-container">
             <div id="output"></div>
             <div class="avatar"></div>
             <div class="form-box">
+
+               {{ csrf_field() }}
+               
                 <form action="/" method="post">
                     <input name="user" type="text" placeholder="Email">
                     <input type="password" placeholder="Password">
-                   
+                
                  <button class="btn btn-info btn-block login" type="submit">Login</button> 
                  <br>
                   <a href="#" data-toggle="modal" data-target="#login-modal">Register</a>
